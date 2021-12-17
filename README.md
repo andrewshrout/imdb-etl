@@ -1,6 +1,6 @@
 # imdb-etl
 
-##To Use
+## To Use
 Create the database
 ```
 docker-compose up
@@ -14,7 +14,28 @@ Crawler will take some time (as there are no proxies). Afterwards, move the .csv
 python3 cleaning.py
 ```
 
-#Systems Architecture
+# Systems Architecture
 ![Unnamed File](https://user-images.githubusercontent.com/7442267/146496459-43987641-2148-4fa0-bbf8-7015acbd9021.png)
-#ERD
+# ERD
 ![Database ER diagram (crow's foot)](https://user-images.githubusercontent.com/7442267/146496462-10315d9a-1863-47c9-ae9e-6bc0337cdbad.png)
+
+# TODO:
+General
+1. Bashscript to run scraper and move file to cleaner
+2. Schedule a cronjob to do this at a regular interval
+3. Migrate to AWS
+4. Institute a manager like Airflow
+
+Scraper
+1. Fix list output
+2. Add S3 bucket file dumping
+3. More informative logging and dump it to a database
+
+Cleaner
+1. Company name extraction handle foreign companies
+2. Optimize for speed
+3. Institute unit tests, and more rigorous validation
+4. More informative logging and dump to a database
+
+# Other Notes:
+
