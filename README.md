@@ -21,11 +21,13 @@ python3 cleaning.py
 
 # TODO:
 General
-1. seperate plot and title out to make movie_info a imdb_fact table for better star schema adherence
-2. Bashscript to run scraper and move file to cleaner
-3. Schedule a cronjob to do this at a regular interval
-4. Migrate to AWS
-5. Institute a manager like Airflow
+1. better star schema adherence
+1a. seperate plot and title out to make movie_info a imdb_fact table
+1b. seperate basegenre out of rankings and make another dimension table
+3. Bashscript to run scraper and move file to cleaner
+4. Schedule a cronjob to do this at a regular interval
+5. Migrate to AWS
+6. Institute a manager like Airflow
 
 Scraper
 1. Fix list output
